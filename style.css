@@ -1,0 +1,139 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding:0;
+}
+.nav{
+    height: 70px;
+    background-color: black;
+}
+.nav_menu{
+    height: 70px;
+    float: left;
+}
+.nav .nav_menu ul li{
+    list-style-type: none;
+    position: relative;
+    float: left;
+
+}
+.nav_menu ul{
+    margin:0;
+    padding: 0;
+}
+.nav .nav_menu ul li a{
+    display: block;
+    width: 100%;
+    height: 70px;
+    text-decoration: none;
+    text-align: center;
+    padding:14px 16px;
+    color: white;
+
+}
+.nav_menu li a:hover{
+    background-color: darkcyan;
+}
+.nav_logo,.nav_logout{
+    height: 70px;
+    text-align: center;
+    float: left;
+
+}
+.nav .nav_logo,.nav_logout h3{
+    color: white;
+}
+
+.main{
+    height: 600px;
+
+}
+.main_left, .main_right{
+    height: 600px;
+    background-color: darkgrey;
+    float: left;
+    
+}
+.main_left a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.main_right{
+    position: relative;
+}
+.main_right .ads1{
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    padding-top:20px ;
+    background-color: antiquewhite;
+    
+    position: absolute;
+    top:10px;
+    left: 80px;
+    
+    
+}
+.main_right .ads2{
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    padding-top:20px ;
+    background-color: antiquewhite;
+    
+    position: absolute;
+    top:100px;
+    left: 80px;
+    
+    
+}
+.main_content{
+    height: 600px;
+    float: left;
+}
+
+
+.footer{
+    height: 70px;
+    background-color: black;
+}
+@media only screen and (max-width: 800px) {
+   
+   .main_left{
+    width: 30%;
+   }
+   .main_content{
+    width: 70%;
+   }
+   .main_right{
+    width: 100%;
+    
+   }
+   .nav_logout, .nav_logo{
+    display: none;
+   }
+   .nav_menu{
+    width: 100%;
+   }
+   .footer{
+    width: 100%;
+   }
+}
